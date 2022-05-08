@@ -27,3 +27,35 @@ function printOrNot(flag: boolean) {
     console.log(str);
 }
 printOrNot(false);
+
+// Anonymous Function
+let sumAnonymous = function(n1: number, n2:number): void {
+    console.log(`sum: ${n1 + n2}`);
+};
+sumAnonymous(3,2);
+
+// Arrow Functions
+let sumArrow1 = (n1: number, n2: number) => n1 + n2;
+let sumArrow2 = (n1: number, n2: number) => { return n1 + n2};
+let objectArrow = (name: string, surname: string) => ({name: name, surname: surname});
+console.log(sumArrow1(5,2));
+console.log(sumArrow2(5,5));
+console.log(objectArrow("Cida", "Luna"));
+
+// Object
+let lottery = {
+    names: ["Joao", "Lucas", "Marcos"],
+    test: "lalala",
+    createLoterryPicker: function(){
+        console.log("First level this: " +this.names+ " " +this.test);
+        return () => {  
+            console.log("Second level this: " +this); // the this below refers this above
+            let pickedPersonNumber = Math.floor(Math.random() * 3);
+            return { name: this.names[pickedPersonNumber]}
+        }
+    }
+};
+
+let personPicker = lottery.createLoterryPicker();
+let pickedPerson = personPicker();
+console.log(pickedPerson);

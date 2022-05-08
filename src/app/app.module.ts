@@ -6,6 +6,7 @@ import { TiposvariaveisComponent } from './tiposvariaveis/tiposvariaveis.compone
 import { InterfacesComponent } from './interfaces/interfaces.component';
 import { ClassesComponent } from './classes/classes.component';
 import { FunctionsComponent } from './functions/functions.component';
+import { GenericsComponent } from './generics/generics.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FunctionsComponent } from './functions/functions.component';
     TiposvariaveisComponent,
     InterfacesComponent,
     ClassesComponent,
-    FunctionsComponent
+    FunctionsComponent,
+    GenericsComponent
   ],
   imports: [
     BrowserModule

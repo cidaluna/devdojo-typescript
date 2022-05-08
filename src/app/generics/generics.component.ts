@@ -33,3 +33,14 @@ let reversedListNumbers = reverseList(numbers);
 
 console.log(reversedListNames);
 console.log(reversedListNumbers);
+
+// The same generic function but using Arrow Function
+let reverseListArrow = <T>(list: Array<T>): Array<T> => {
+    let theReversedList: T[] = [];
+    for(let i = list.length - 1; i >= 0; i--) {
+        theReversedList.push(list[i]);
+    }
+    return theReversedList;
+};
+
+console.log(reverseListArrow(names));

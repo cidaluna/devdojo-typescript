@@ -7,6 +7,7 @@ import { InterfacesComponent } from './interfaces/interfaces.component';
 import { ClassesComponent } from './classes/classes.component';
 import { FunctionsComponent } from './functions/functions.component';
 import { GenericsComponent } from './generics/generics.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GenericsComponent } from './generics/generics.component';
     GenericsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

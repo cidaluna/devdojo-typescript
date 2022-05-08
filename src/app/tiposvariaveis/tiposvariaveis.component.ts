@@ -1,7 +1,7 @@
 import { Component, OnInit, ɵɵpipeBind3 } from '@angular/core';
 
 @Component({
-  selector: 'tiposvariaveis',
+  selector: 'app-tiposvariaveis',
   templateUrl: './tiposvariaveis.component.html',
   styleUrls: ['./tiposvariaveis.component.css']
 })

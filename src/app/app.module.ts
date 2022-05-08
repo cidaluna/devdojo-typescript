@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { TiposvariaveisComponent } from './tiposvariaveis/tiposvariaveis.component';
 import { InterfacesComponent } from './interfaces/interfaces.component';
 import { ClassesComponent } from './classes/classes.component';
+import { FunctionsComponent } from './functions/functions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TiposvariaveisComponent,
     InterfacesComponent,
-    ClassesComponent
+    ClassesComponent,
+    FunctionsComponent
   ],
   imports: [
     BrowserModule

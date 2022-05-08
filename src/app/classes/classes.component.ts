@@ -15,29 +15,51 @@ export class ClassesComponent implements OnInit {
 }
 
 class Person{
-  name: string;
+  private _name: string;
   constructor(name: string){
-    this.name = name;
+    this._name = name;
   }
   print(): void{
-    console.log(`name: ${this.name}`);
+    console.log(`name: ${this._name}`);
   }
+
+  get name(): string {
+    return this._name;
+  }
+
+  set name(value: string) {
+    this._name = value;
+  }
+
 }
 
-class Employee extends Person{
-  salary: number;
+class Employee extends Person {
+  private _salary: number;
   constructor(name: string, salary: number){
     super(name);
-    this.salary = salary;
+    this._salary = salary;
   }
-  override print(): void{
+  override print(): void {
     super.print();
-    console.log(`salary: ${this.salary}`);
+    console.log(`salary: ${this._salary}`);
   }
+
+  get salary(): number {
+    return this._salary;
+  }
+
+  set salary(value: number) {
+    this._salary = value;
+  }
+
 }
 
 let p1 = new Person("Joao");
-let p2 = new Employee("Helena", 5000);
+let emp1 = new Employee("Helena", 5000);
 
 p1.print();
+emp1.print();
+console.log(`Her name is ${emp1.name}`);
+
+let p2: Person = new Employee("Lucy", 10000);
 p2.print();

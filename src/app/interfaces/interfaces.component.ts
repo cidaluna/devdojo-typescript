@@ -11,9 +11,8 @@ export class InterfacesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  
 }
+console.log(" ----- START - INTERFACES ------");
 interface Person{
   name: string;
 }
@@ -32,3 +31,27 @@ function printName(person: Person): void {
 
 printName(pe);
 printName(emp);
+
+// Intersecao de tipos, combinando propriedades de ambas interfaces
+interface Employees {
+  employeeId: number;
+  name: string;
+  age: number;
+}
+
+interface Manager {
+  stockPlan: boolean;
+}
+
+type ManagerEmployees = Employees & Manager;
+let em1: ManagerEmployees;
+em1 = {
+  employeeId: 1,
+  name: 'Luna',
+  age: 35,
+  stockPlan: true,
+}
+
+console.log('Result: ' +em1.name+ " " +em1.age);
+
+console.log(" ----- END - INTERFACES ------");

@@ -1,4 +1,4 @@
-import { Component, OnInit, ɵɵpipeBind3 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tiposvariaveis',
@@ -12,7 +12,7 @@ export class TiposvariaveisComponent implements OnInit {
   ngOnInit(): void {
   }
 }
-  console.log(" ----- TIPOS DE VARIAVEIS ------");
+  console.log(" ----- START - TYPE VARIABLES ------");
   let num: number = 10;
   let bool: boolean = true;
   let str: string = "A beautiful message";
@@ -46,3 +46,5 @@ function hello(){
 
 console.log(add(5,2,3));
 console.log(hello());
+
+console.log(" ----- END - TYPE VARIABLES ------");

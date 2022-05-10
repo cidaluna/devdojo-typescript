@@ -16,7 +16,7 @@ export class FunctionsComponent implements OnInit {
    }
 
 }
-
+console.log(" ----- START - FUNCTIONS ------");
 function printValues(val: string) {
     console.log(val);
 }
@@ -59,3 +59,5 @@ let lottery = {
 let personPicker = lottery.createLoterryPicker();
 let pickedPerson = personPicker();
 console.log(pickedPerson);
+
+console.log(" ----- END - FUNCTIONS ------");

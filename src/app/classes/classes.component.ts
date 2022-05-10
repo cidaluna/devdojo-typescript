@@ -13,7 +13,7 @@ export class ClassesComponent implements OnInit {
   }
 
 }
-
+console.log(" ----- START - CLASSES ------");
 class Person{
   private _name: string;
   constructor(name: string){
@@ -63,3 +63,5 @@ console.log(`Her name is ${emp1.name}`);
 
 let p2: Person = new Employee("Lucy", 10000);
 p2.print();
+
+console.log(" ----- END - CLASSES ------");

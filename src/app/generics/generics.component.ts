@@ -16,7 +16,7 @@ export class GenericsComponent implements OnInit {
    }
 
 }
-
+console.log(" ----- START - GENERICS FUNCTIONS ------");
 // Generic Function
 function reverseList<T>(list: Array<T>): Array<T> {
     let theReversedList: T[] = [];
@@ -44,3 +44,5 @@ let reverseListArrow = <T>(list: Array<T>): Array<T> => {
 };
 
 console.log(reverseListArrow(names));
+
+console.log(" ----- END - GENERICS FUNCTIONS ------");

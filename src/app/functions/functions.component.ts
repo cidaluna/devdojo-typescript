@@ -66,6 +66,17 @@ let addNumbers1 = function (x: number, y: number): number {
 }
 console.log('Result Anonymous Function: ' +addNumbers1(2,2));
 
+// Another Function with optional parameters
+function addNumbers2(x: number, y?: number): number {
+    if(y === undefined){
+        return x;
+    }else{
+        return x + y;
+    }
+}
+console.log('Result Function: ' +addNumbers2(55, 3));
+console.log('Resul Function with no parameter y: ' +addNumbers2(5));
+
 // Arrow Function
 let total = (input: number[]): number => {
     let total: number = 0;
@@ -81,7 +92,7 @@ let total = (input: number[]): number => {
 console.log('Result Arrow Function: ' +total([1,2,3]));
 
 // Arrow Function
-let addNumbers2 = (x: number, y: number): number => x + y;
-console.log('Result Arrow Function: ' +addNumbers2(2,2));
+let addNumbers3 = (x: number, y: number): number => x + y;
+console.log('Result Arrow Function: ' +addNumbers3(2,2));
 
 console.log(" ----- END - FUNCTIONS ------");

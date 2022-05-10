@@ -60,4 +60,10 @@ let personPicker = lottery.createLoterryPicker();
 let pickedPerson = personPicker();
 console.log(pickedPerson);
 
+// Anonymous Function
+let addNumbers1 = function (x: number, y: number): number {
+    return x + y;
+}
+console.log('Result Anonymous Function: ' +addNumbers1(2,2));
+
 console.log(" ----- END - FUNCTIONS ------");

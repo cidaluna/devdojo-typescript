@@ -83,6 +83,21 @@ function addNumbers4 (x: number, y = 25):number{
 }
 console.log('Resul Function with default parameter y: ' +addNumbers4(11));
 
+// Rest parameters
+let addAllNumbers = (firstNumber: number, ...restOfNumbers: number[]): number => {
+    let total: number = firstNumber;
+    for(let counter = 0; counter <restOfNumbers.length; counter++){
+        if(isNaN(restOfNumbers[counter])){
+            continue;
+        }
+        total += Number(restOfNumbers[counter]);
+    }
+    return total;
+}
+console.log('Resul Function with no rest parameter: ' +addAllNumbers(1));
+console.log('Resul Function with rest parameter: ' +addAllNumbers(1,2,3,4,5,6,7));
+console.log('Resul Function with rest parameter: ' +addAllNumbers(1,2,3));
+
 // Arrow Function
 let total = (input: number[]): number => {
     let total: number = 0;

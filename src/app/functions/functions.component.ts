@@ -116,4 +116,16 @@ console.log('Result Arrow Function: ' +total([1,2,3]));
 let addNumbers3 = (x: number, y: number): number => x + y;
 console.log('Result Arrow Function: ' +addNumbers3(2,2));
 
+// Function with destructured object parameters 
+interface Message{
+    text: string;
+    sender: string;
+}
+
+function displayMessage({text, sender}: Message){
+    console.log(`Message from ${sender}: ${text}`);
+}
+displayMessage({sender: 'Cida', text:'my Typescript code'});
+
+
 console.log(" ----- END - FUNCTIONS ------");

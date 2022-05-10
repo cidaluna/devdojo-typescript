@@ -67,6 +67,20 @@ let addNumbers1 = function (x: number, y: number): number {
 console.log('Result Anonymous Function: ' +addNumbers1(2,2));
 
 // Arrow Function
+let total = (input: number[]): number => {
+    let total: number = 0;
+    for(let i = 0; i<= input.length; i++){
+        if(isNaN(input[i])){
+            continue;
+        }
+        total += Number(input[i]);
+    }
+    return total;
+}
+
+console.log('Result Arrow Function: ' +total([1,2,3]));
+
+// Arrow Function
 let addNumbers2 = (x: number, y: number): number => x + y;
 console.log('Result Arrow Function: ' +addNumbers2(2,2));
 

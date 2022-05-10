@@ -66,4 +66,8 @@ let addNumbers1 = function (x: number, y: number): number {
 }
 console.log('Result Anonymous Function: ' +addNumbers1(2,2));
 
+// Arrow Function
+let addNumbers2 = (x: number, y: number): number => x + y;
+console.log('Result Arrow Function: ' +addNumbers2(2,2));
+
 console.log(" ----- END - FUNCTIONS ------");

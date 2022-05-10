@@ -77,6 +77,12 @@ function addNumbers2(x: number, y?: number): number {
 console.log('Result Function: ' +addNumbers2(55, 3));
 console.log('Resul Function with no parameter y: ' +addNumbers2(5));
 
+// Function with default parameter
+function addNumbers4 (x: number, y = 25):number{
+    return x + y;
+}
+console.log('Resul Function with default parameter y: ' +addNumbers4(11));
+
 // Arrow Function
 let total = (input: number[]): number => {
     let total: number = 0;

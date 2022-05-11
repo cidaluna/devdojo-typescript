@@ -54,4 +54,27 @@ em1 = {
 
 console.log('Result: ' +em1.name+ " " +em1.age);
 
+// Multiple Interface
+interface ListPerson{
+  name: string;
+}
+
+interface ListPersonDetail{
+  age: number;
+  gender: string;
+}
+
+interface ListEmployee extends ListPerson, ListPersonDetail{
+  empCode: number;
+}
+
+let empObject = <ListEmployee>{};
+empObject.name = "Lu";
+empObject.age = 35;
+empObject.gender = "female";
+empObject.empCode = 848;
+
+console.log("Name: "+empObject.name);
+console.log("Employee code: "+empObject.empCode);
+
 console.log(" ----- END - INTERFACES ------");

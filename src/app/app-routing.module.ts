@@ -12,7 +12,7 @@ import { InterfacesComponent } from './interfaces/interfaces.component';
 
 
 
-const routes: Routes = [
+const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'classes', component: ClassesComponent },
   { path: 'functions', component: FunctionsComponent },
@@ -27,7 +27,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule,
+    RouterModule.forRoot(appRoutes)
   ],
   // adicionei elemento no exports 
   exports: [ RouterModule ]

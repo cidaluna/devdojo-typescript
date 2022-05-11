@@ -47,4 +47,51 @@ function hello(){
 console.log(add(5,2,3));
 console.log(hello());
 
+// Arrays
+/*
+var myArray: number[][] = [[1,2,3],[9,4,1]];
+
+for(let i=0; i<=myArray.length;i++){
+  for(let j=0; j<=myArray.length;j++){
+    console.log(myArray[i][j] + ", ");
+  }
+}
+*/
+
+// Array for..of Loop
+let arr = [10,20,50,55];
+for(var i of arr){
+  console.log(i);
+}
+
+// Array for..of Loop
+let myStr =  ["Typescript", "Frontend", "DevOps", "GitHub", "Developers", "Brazil"];
+for(var x of myStr){
+  console.log(x);
+}
+
+// Array result in the same line
+let arrayABC = ['a','b','c'];
+console.log(...arrayABC);
+
+// Add numbers into array
+var arrayNumbers: number[] = [];
+for(let i = 0; i<= 5; i++){
+  arrayNumbers.push(i);
+}
+console.log(arrayNumbers.join(', '));
+
+// Array prints character
+let message = "Hello World";
+for(var x of message){
+  console.log(...x); // return one character for line
+}
+
+
+// Array using for..in
+let newArray = ["Typescript", "Frontend", "DevOps", "GitHub", "Developers", "Brazil"];
+for(let i=0; i<newArray.length;i++){
+  console.log('Index: '+i+'| Value:'+newArray[i]);  // print values and index
+}
+
 console.log(" ----- END - TYPE VARIABLES ------");

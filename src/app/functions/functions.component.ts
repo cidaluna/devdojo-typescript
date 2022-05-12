@@ -127,5 +127,16 @@ function displayMessage({text, sender}: Message){
 }
 displayMessage({sender: 'Cida', text:'my Typescript code'});
 
+// Passing Tuple to Functions
+
+let empTuple = ["Frontend", "Luna", 15000];
+
+function display(tuple_values: any[]){
+    for(let i=0; i<tuple_values.length;i++){
+        console.log(empTuple[i]);
+    }
+}
+
+display(empTuple);
 
 console.log(" ----- END - FUNCTIONS ------");

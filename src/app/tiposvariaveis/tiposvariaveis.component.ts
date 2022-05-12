@@ -94,4 +94,8 @@ for(let i=0; i<newArray.length;i++){
   console.log('Index: '+i+'| Value:'+newArray[i]);  // print values and index
 }
 
+// Array
+const arrayOfBooleans = [true, false];
+console.log(...arrayOfBooleans);
+
 console.log(" ----- END - TYPE VARIABLES ------");
